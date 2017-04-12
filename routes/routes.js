@@ -65,11 +65,10 @@ module.exports = function (app) {
                 });
 
             });
-        });
+        })
 
     // delete the tweet with this id (accessed at DELETE http://localhost:8080/api/tweets/:tweet_id)
-    .
-    delete(function (req, res) {
+    .delete(function (req, res) {
         Tweet.remove({
             _id: req.params.tweet_id
         }, function (err, tweet) {
